@@ -62,22 +62,34 @@ export default function Navbar() {
                 </Link>
                 <div className="absolute hidden group-hover:block bg-white shadow-md   w-48 p-2 rounded-md">
                   <Link
-                    href="#"
+                    href="/workplace"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
-                    Our Story
+                    Workplace Services
                   </Link>
                   <Link
-                    href="#"
+                    href="/workplace"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
-                    Team
+                    Workplace Assessment
                   </Link>
                   <Link
-                    href="#"
+                    href="/workplace"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
-                    Careers
+                    On-site Restocking
+                  </Link>
+                  <Link
+                    href="/workplace"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >
+                    On-site Training
+                  </Link>
+                  <Link
+                    href="/workplace"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                  >
+                    Hire an AED
                   </Link>
                 </div>
               </div>
