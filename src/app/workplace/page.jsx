@@ -5,8 +5,7 @@ import Footer from "../components/Footer";
 import Image from "next/image";
 import AboutBanner from "../assets/images/about-banner.jpg";
 import Link from "next/link";
-import circleImage from "../assets/images/circli-img.jpg";
-import missionImg from "../assets/images/card3.png";
+
 
 export default function Workplace() {
   const [activeTab, setActiveTab] = useState("Workplace Services");
@@ -150,288 +149,852 @@ export default function Workplace() {
                   assessment yourself.
                 </p>
                 <div className="common-sec">
-                    <h3 className="page-common-h4">Workplace First Aid Assessment Enquiry</h3>
-                    <form className="space-y-6">
-        {/* Grid for name, email, phone, etc. */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <label className="block text-sm font-medium text-gray-700">First name*</label>
-            <input type="text" placeholder="Enter Name" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring focus:ring-blue-200" />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Last name*</label>
-            <input type="text" placeholder="Enter Name" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring focus:ring-blue-200" />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Email*</label>
-            <input type="email" placeholder="Enter Name" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring focus:ring-blue-200" />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Phone Number*</label>
-            <input type="tel" placeholder="Enter Number" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring focus:ring-blue-200" />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Business name*</label>
-            <input type="text" placeholder="Enter Name" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring focus:ring-blue-200" />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Postcode*</label>
-            <input type="text" placeholder="Enter Number" className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring focus:ring-blue-200" />
-          </div>
-          <div className="md:col-span-2">
-            <label className="block text-sm font-medium text-gray-700">Number of employees*</label>
-            <select className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring focus:ring-blue-200">
-              <option>Enter Name</option>
-              {/* Add more options as needed */}
-            </select>
-          </div>
-        </div>
+                  <h3 className="page-common-h4">
+                    Workplace First Aid Assessment Enquiry
+                  </h3>
+                  <form className="space-y-6 mt-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full lg:w-[70%]">
+                      <div>
+                        <label className="form-label">First name*</label>
+                        <input
+                          type="text"
+                          placeholder="Enter Name"
+                          className="form-input"
+                        />
+                      </div>
+                      <div>
+                        <label className="form-label">Last name*</label>
+                        <input
+                          type="text"
+                          placeholder="Enter Name"
+                          className="form-input"
+                        />
+                      </div>
+                      <div>
+                        <label className="form-label">Email*</label>
+                        <input
+                          type="email"
+                          placeholder="Enter Name"
+                          className="form-input"
+                        />
+                      </div>
+                      <div>
+                        <label className="form-label">Phone Number*</label>
+                        <input
+                          type="tel"
+                          placeholder="Enter Number"
+                          className="form-input"
+                        />
+                      </div>
+                      <div>
+                        <label className="form-label">Business name*</label>
+                        <input
+                          type="text"
+                          placeholder="Enter Name"
+                          className="form-input"
+                        />
+                      </div>
+                      <div>
+                        <label className="form-label">Postcode*</label>
+                        <input
+                          type="text"
+                          placeholder="Enter Number"
+                          className="form-input"
+                        />
+                      </div>
+                      <div>
+                        <label className="form-label">
+                          Number of employees*
+                        </label>
+                        <select className="form-input">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                      </div>
+                    </div>
 
-        {/* Radio group for assessment */}
-        <div className="space-y-2">
-          <p className="text-sm font-medium text-gray-700">Have you previously completed a Workplace First Aid Assessment?</p>
-          <div className="flex items-center space-x-4">
-            <label className="flex items-center">
-              <input type="radio" name="assessment" className="form-radio text-blue-600" />
-              <span className="ml-2 text-gray-700">Yes</span>
-            </label>
-            <label className="flex items-center">
-              <input type="radio" name="assessment" defaultChecked className="form-radio text-blue-600" />
-              <span className="ml-2 text-gray-700">No</span>
-            </label>
-          </div>
-        </div>
+                    <div className="border-t border-[#A4A4A4] pt-6 flex flex-col gap-4 md:gap-[22px]">
+                      <div className="space-y-2">
+                        <p className="form-label !font-medium">
+                          Have you previously completed a Workplace First Aid
+                          Assessment?
+                        </p>
+                        <div className="flex flex-col gap-2">
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="assessment"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">Yes</span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="assessment"
+                              defaultChecked
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">No</span>
+                          </label>
+                        </div>
+                      </div>
 
-        {/* Risk selection (not visible in screenshot but mentioned) */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mt-4">Is your workplace high or low risk?</label>
-          {/* Options can be added here if needed */}
-        </div>
-      </form>
+                      <div className="space-y-2">
+                        <p className="form-label !font-medium">
+                          Is your workplace high or low risk?
+                        </p>
+                        <div className="flex flex-col gap-2">
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="risk"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">High</span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="risk"
+                              defaultChecked
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-[#606060] font-bold">
+                              Low
+                            </span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="risk"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">Unsure</span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <p className="form-label !font-medium">
+                          Do you have sufficient first aiders in your workplace?
+                        </p>
+                        <div className="flex flex-col gap-2">
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="workplace"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">High</span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="workplace"
+                              defaultChecked
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-[#606060] font-bold">
+                              Low
+                            </span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="workplace"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">Unsure</span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <p className="form-label !font-medium">
+                          Do you have sufficient first aid kits in your
+                          workplace, including vehicles?
+                        </p>
+                        <div className="flex flex-col gap-2">
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="vehicles"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">High</span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="vehicles"
+                              defaultChecked
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-[#606060] font-bold">
+                              Low
+                            </span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="vehicles"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">Unsure</span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <p className="form-label !font-medium">
+                          Do all first aiders in your workplace have current
+                          first aid qualifications?
+                        </p>
+                        <div className="flex flex-col gap-2">
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="qualifications"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">High</span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="qualifications"
+                              defaultChecked
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-[#606060] font-bold">
+                              Low
+                            </span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="qualifications"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">Unsure</span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <p className="form-label !font-medium">
+                          Does your workplace have adequate and visible first
+                          aid signage?
+                        </p>
+                        <div className="flex flex-col gap-2">
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="signage"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">High</span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="signage"
+                              defaultChecked
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-[#606060] font-bold">
+                              Low
+                            </span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="signage"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">Unsure</span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <p className="form-label !font-medium">
+                          Does your workplace have a current set of first aid
+                          procedures?
+                        </p>
+                        <div className="flex flex-col gap-2">
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="procedures"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">High</span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="procedures"
+                              defaultChecked
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-[#606060] font-bold">
+                              Low
+                            </span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="procedures"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">Unsure</span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <p className="form-label !font-medium">
+                          Does your workplace run regular first aid drills?
+                        </p>
+                        <div className="flex flex-col gap-2">
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="drills"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">High</span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="drills"
+                              defaultChecked
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-[#606060] font-bold">
+                              Low
+                            </span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="drills"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">Unsure</span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <p className="form-label !font-medium">
+                          Does your workplace have a Defibrillator (AED)?
+                        </p>
+                        <div className="flex flex-col gap-2">
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="Defibrillator"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">High</span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="Defibrillator"
+                              defaultChecked
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-[#606060] font-bold">
+                              Low
+                            </span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="Defibrillator"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">Unsure</span>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div className="mt-6 md:mt-8 lg:mt-10 2xl:mt-[60px]">
+                        <a href="" className="primary-btn">
+                          Submit
+                        </a>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </>
             )}
             {activeTab === "On-site Restocking" && (
               <>
-                <p className="page-common-desc">
-                  St John Ambulance SA has volunteer divisions statewide, where
-                  members meet for training and provide first aid at local
-                  events. Many divisions also support youth development and
-                  serve as public first aid training venues, extending access to
-                  regional areas.
-                  <Link className="underline underline-offset-1" href="#">
-                    Find your nearest St John division below.
-                  </Link>
+                <p className="page-common-desc !text-[#000000] font-medium">
+                  Did you know that your first aid kits should be checked and
+                  audited every 12 months as a minimum requirement?
+                </p>
+                <p className="page-common-desc !text-[#000000] font-medium">
+                  With our on-site restocking service, we come to you to check
+                  and replenish your kits, create an inventory list of first aid
+                  items, affix a signed compliance sticker on your kits each
+                  visit, and offer ongoing compliance support. We can also
+                  provide courtesy reminders of when services are due to give
+                  you peace of mind.
+                </p>
+                <p className="page-common-desc !text-[#000000] font-medium">
+                  Simply fill out the form below and a member of our Restocking
+                  team will contact you to organise our on-site restocking
+                  service for your workplace.
                 </p>
                 <div className="common-sec">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xl:gap-10 2xl:gap-12">
-                    <div className="about-box-list">
-                      <h3 className="page-common-h3 !text-center">
-                        Adult Divisions
-                      </h3>
-                      <div className="about-box">
-                        <Link href="">Adelaide Central</Link>
-                        <Link href="">Arno Bay</Link>
-                        <Link href="">Band</Link>
-                        <Link href="">Campbelltown</Link>
-                        <Link href="">Event Comms</Link>
-                        <Link href="">Gawler</Link>
-                        <Link href="">Limestone Coast</Link>
-                        <Link href="">Logistics</Link>
-                        <Link href="">Lower North</Link>
-                        <Link href="">Mitcham/Colonel Light Gardens</Link>
-                        <Link href="">Mt Barker</Link>
-                        <Link href="">Murray Bridge</Link>
-                        <Link href="">Noarlunga</Link>
-                        <Link href="">Playford</Link>
-                        <Link href="">Prospect</Link>
-                        <Link href="">Port Lincoln</Link>
-                        <Link href="">Port Pirie</Link>
-                        <Link href="">Unley</Link>
-                        <Link href="">Victor Harbor</Link>
-                        <Link href="">West Torrens</Link>
-                        <Link href="">Whyalla</Link>
-                        <Link href="">Woodville</Link>
+                  <h3 className="page-common-h4">On-site Restocking Enquiry</h3>
+                  <form className="space-y-6 mt-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full lg:w-[70%]">
+                      <div>
+                        <label className="form-label">First name*</label>
+                        <input
+                          type="text"
+                          placeholder="Enter Name"
+                          className="form-input"
+                        />
+                      </div>
+                      <div>
+                        <label className="form-label">Last name*</label>
+                        <input
+                          type="text"
+                          placeholder="Enter Name"
+                          className="form-input"
+                        />
+                      </div>
+                      <div>
+                        <label className="form-label">Email*</label>
+                        <input
+                          type="email"
+                          placeholder="Enter Name"
+                          className="form-input"
+                        />
+                      </div>
+                      <div>
+                        <label className="form-label">Phone Number*</label>
+                        <input
+                          type="tel"
+                          placeholder="Enter Number"
+                          className="form-input"
+                        />
+                      </div>
+                      <div>
+                        <label className="form-label">Business name*</label>
+                        <input
+                          type="text"
+                          placeholder="Enter Name"
+                          className="form-input"
+                        />
+                      </div>
+                      <div>
+                        <label className="form-label">Postcode*</label>
+                        <input
+                          type="text"
+                          placeholder="Enter Number"
+                          className="form-input"
+                        />
+                      </div>
+                      <div>
+                        <label className="form-label">
+                          Number of employees*
+                        </label>
+                        <select className="form-input">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
                       </div>
                     </div>
 
-                    <div className="about-box-list">
-                      <h3 className="page-common-h3 !text-center">
-                        Youth Divisions
-                      </h3>
-                      <div className="about-box">
-                        <Link href="">Blackwood</Link>
-                        <Link href="">Campbelltown</Link>
-                        <Link href="">Gawler</Link>
-                        <Link href="">Mallala</Link>
-                        <Link href="">Marion</Link>
-                        <Link href="">Mitcham/Colonel Light Gardens</Link>
-                        <Link href="">Mt Barker</Link>
-                        <Link href="">Mt Gambier</Link>
-                        <Link href="">Noarlunga</Link>
-                        <Link href="">Playford</Link>
-                        <Link href="">Prospect</Link>
-                        <Link href="">Port Adelaide</Link>
-                        <Link href="">Port Pirie</Link>
-                        <Link href="">Tea Tree Gully</Link>
-                        <Link href="">Unley</Link>
-                        <Link href="">West Torrens</Link>
-                        <Link href="">Whyalla</Link>
-                        <Link href="">Woodville</Link>
-                      </div>
-                    </div>
+                    <div className="border-t border-[#A4A4A4] pt-6 flex flex-col gap-4 md:gap-[22px]">
+                      <h4 className="text-[18px] md:text-[20px] text-[#000000] font-semibold">
+                        Booking Contact Details
+                      </h4>
 
-                    <div className="about-box-list">
-                      <h3 className="page-common-h3 !text-center">
-                        Training Venues
-                      </h3>
-                      <div className="about-box">
-                        <Link href="">
-                          Adelaide CBD (Master Builders Association)
-                        </Link>
-                        <Link href="">47 South Tce, Adelaide SA 5000</Link>
-                        <Link href="">Berri (Berri Hotel)</Link>
-                        <Link href="">Riverview Driver, Berri SA 5343</Link>
-                        <Link href="">Clare (St John Centre)</Link>
-                        <Link href="">324 Main Rd, Clare SA 5034</Link>
-                        <Link href="">Elizabeth (St John Centre)</Link>
-                        <Link href="">81 Elizabeth Way, Elizabeth SA 5112</Link>
-                        <Link href="">
-                          Evanston (Gawler & Barossa Jockey club)
-                        </Link>
-                        <Link href="">51 Barnet Rd, Evanston SA 5116</Link>
-                        <Link href="">Kadina (Accustom Driving School)</Link>
-                        <Link href="">
-                          43 Russell Street, Matta Flat SA 5554
-                        </Link>
-                        <Link href="">Kent Town (Econo Lodge)</Link>
-                        <Link href="">
-                          27 Dequetteville Terrace, Kent Town SA 5067
-                        </Link>
-                        <Link href="">Marion (Club Marion)</Link>
-                        <Link href="">262 Sturt Road, Marion SA 5043</Link>
-                        <Link href="">Modbury (Sferas on the Park)</Link>
-                        <Link href="">191 Reservoir Road, Modbury SA 5092</Link>
-                        <Link href="">Morphett Vale (St John Centre)</Link>
-                        <Link href="">
-                          26 Flaxmill Road, Morphett Vale SA 5168
-                        </Link>
-                        <Link href="">Mount Barker (St John Centre)</Link>
-                        <Link href="">3 Kookaburra Lane, Totness SA 5250</Link>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full lg:w-[70%]">
+                        <div>
+                          <label className="form-label">
+                            Portable Workplace Kits*
+                          </label>
+                          <input
+                            type="number"
+                            placeholder="0"
+                            className="form-input"
+                          />
+                        </div>
+                        <div>
+                          <label className="form-label">Wall Mount Kits*</label>
+                          <input
+                            type="number"
+                            placeholder="0"
+                            className="form-input"
+                          />
+                        </div>
+                        <div>
+                          <label className="form-label">Small Kits*</label>
+                          <input
+                            type="number"
+                            placeholder="0"
+                            className="form-input"
+                          />
+                        </div>
+                        <div>
+                          <label className="form-label">
+                            Automated External Defibrillator (AED)*
+                          </label>
+                          <input
+                            type="number"
+                            placeholder="0"
+                            className="form-input"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <p className="form-label !font-medium">
+                          Have we restocked for this site before?
+                        </p>
+                        <div className="flex flex-col gap-2">
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="assessment"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">Yes</span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="assessment"
+                              defaultChecked
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">No</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div className="mt-6 md:mt-8 lg:mt-10 2xl:mt-[60px]">
+                        <a href="" className="primary-btn">
+                          Submit
+                        </a>
                       </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </>
             )}
             {activeTab === "On-site Training" && (
               <>
-                <p className="page-common-desc">
-                  We highly value the historical heritage of St John and its
-                  evolution throughout the ages, which has enabled it to grow
-                  into the modern-day organisation we champion today. In order
-                  to capture and document this history, the St John Historical
-                  Society of SA was established in 1988 and is part of a network
-                  of St John Historical Societies throughout Australia. Each
-                  year a Historical Seminar is held where the societies gather
-                  and subsequently publish an annual journal. It is a
-                  fascinating record of St John history that ensures these
-                  important stories and moments in time are documented for
-                  future generations to enjoy.
+                <p className="page-common-desc !text-[#000000] font-medium">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus.  
                 </p>
-                <p className="page-common-desc">
-                  Our dedicated team of Historical Society volunteers work
-                  tirelessly to collect, manage, preserve and research artefacts
-                  that reflect the history of the Order of St John and St John
-                  Ambulance. Many of these elements are on display in the St
-                  John SA Historical Museum, which is open for members of the
-                  public to enjoy. Coupled with the extensive knowledge our
-                  Historical Society volunteers have of St John, the museum is a
-                  treasure trove of St John history and memorabilia.
-                </p>
-                <p className="page-common-desc">
-                  At the beginning of 2021, our museum moved to its new location
-                  in Brighton. Our volunteers are very excited to welcome you
-                  for a tour of the interesting artefacts and pieces of St John
-                  history.
-                </p>
-                <p className="page-common-desc">
-                  Address: 7 Arundel Road, Brighton
-                </p>
-                <p className="page-common-desc">Visiting hours</p>
-                <p className="page-common-desc">Fridays 10:30am to 12:30pm</p>
-                <p className="page-common-desc">Sundays 1:30pm to 3:30pm</p>
-                <p className="page-common-desc">
-                  Group bookings can be made at any mutually agreed time. To
-                  arrange a time, please call 0456 053 908.
-                </p>
+
+                <div className="common-sec">
+                  <h3 className="page-common-h4">
+                    On-Site Course Booking Enquiry
+                  </h3>
+                  <form className="space-y-6 mt-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      <div>
+                        <label className="form-label">
+                          Name Of Your Organisation *
+                        </label>
+                        <select className="form-input">
+                          <option>Lorem</option>
+                          <option>Lorem</option>
+                          <option>Lorem</option>
+                          <option>Lorem</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label className="form-label">
+                          Preferred Course Date
+                        </label>
+                        <select className="form-input">
+                          <option>Lorem</option>
+                          <option>Lorem</option>
+                          <option>Lorem</option>
+                          <option>Lorem</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label className="form-label">Course Name</label>
+                        <select className="form-input">
+                          <option>Lorem</option>
+                          <option>Lorem</option>
+                          <option>Lorem</option>
+                          <option>Lorem</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div className="border-t border-[#A4A4A4] pt-6 flex flex-col gap-4 md:gap-[22px]">
+                      <h4 className="text-[18px] md:text-[20px] text-[#000000] font-semibold">
+                        Address of Training
+                      </h4>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full lg:w-1/2">
+                        <div>
+                          <label className="form-label">Unit Number? *</label>
+                          <select className="form-input">
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label className="form-label">City? *</label>
+                          <select className="form-input">
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label className="form-label">Postcode? *</label>
+                          <select className="form-input">
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label className="form-label">State? *</label>
+                          <select className="form-input">
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="border-t border-[#A4A4A4] pt-6 flex flex-col gap-4 md:gap-[22px]">
+                      <h4 className="text-[18px] md:text-[20px] text-[#000000] font-semibold">
+                        Booking Contact Details
+                      </h4>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full lg:w-1/2">
+                        <div>
+                          <label className="form-label">Contact Name *</label>
+                          <select className="form-input">
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label className="form-label">Contact Number *</label>
+                          <select className="form-input">
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label className="form-label">Email *</label>
+                          <select className="form-input">
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="border-t border-[#A4A4A4] pt-6 flex flex-col gap-4 md:gap-[22px]">
+                      <h4 className="text-[18px] md:text-[20px] text-[#000000] font-semibold">
+                        All Hours Contact Details
+                      </h4>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full lg:w-1/2">
+                        <div>
+                          <label className="form-label">Contact Name *</label>
+                          <select className="form-input">
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label className="form-label">Contact Number *</label>
+                          <select className="form-input">
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label className="form-label">Email *</label>
+                          <select className="form-input">
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                            <option>Lorem</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="border-t border-[#A4A4A4] pt-6 flex flex-col gap-4 md:gap-[22px]">
+                      <div className="space-y-2">
+                        <p className="form-label !font-medium">
+                          Onsite induction required?
+                        </p>
+                        <div className="flex flex-col gap-2">
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="assessment"
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">Yes</span>
+                          </label>
+                          <label className="flex items-center">
+                            <input
+                              type="radio"
+                              name="assessment"
+                              defaultChecked
+                              className="form-radio !text-[#038D96]"
+                            />
+                            <span className="ml-2 text-gray-700">No</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div>
+                        <label className="form-label">
+                          Any Other Enquiries?
+                        </label>
+                        <textarea
+                          className="form-input w-full lg:!w-1/2"
+                          rows="5"
+                          name=""
+                          id=""
+                        ></textarea>
+                      </div>
+                      <div className="mt-6 md:mt-8 lg:mt-10 2xl:mt-[60px]">
+                        <a href="" className="primary-btn">
+                          Submit
+                        </a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
               </>
             )}
             {activeTab === "Hire an AED" && (
               <>
+                <h3 className="page-common-h3">
+                  Ensure Safety and Preparedness at Your Event or Workplace
+                </h3>
                 <p className="page-common-desc">
-                  St John Ambulance SA is governed by a Board of Directors who
-                  are responsible to the members for the performance of the
-                  incorporated association, ensuring St John is appropriately
-                  managed and provides leading first aid and community services
-                  consistent with the culture and values of The Order of St
-                  John.
+                  Welcome to our AED Hire Service! Whether you're a corporate
+                  business looking to enhance workplace safety, or an event
+                  organiser aiming to ensure the well-being of your attendees,
+                  our AED hire service is here to support you.
                 </p>
+                <h3 className="page-common-h3">Why Hire an AED?</h3>
                 <p className="page-common-desc">
-                  Board members freely donate their time and professional
-                  expertise to assist in the successful management of St John
-                  Ambulance SA.
+                  Cardiac arrest preparedness is crucial, as sudden cardiac
+                  arrest can happen anywhere, anytime. Having an AED on hand
+                  significantly increases the chances of survival and recovery.
+                  Ensuring the safety of your employees, clients, or guests by
+                  being prepared for medical emergencies provides peace of mind.
+                  Our AEDs are user-friendly and come with clear instructions,
+                  making them accessible for anyone to operate during an
+                  emergency.
                 </p>
+                <h3 className="page-common-h3">Who Should Hire an AED?</h3>
+                <ul className="common-page-ul list-disc pl-4 mb-4 md:mb-6 xl:mb-8 2xl:mb-9">
+                  <li>
+                    <span>Corporate Businesses:</span> Enhance the safety of
+                    your workplace by being prepared for medical emergencies.
+                  </li>
+                  <li>
+                    <span>Event Organisers:</span> Ensure the safety of your
+                    attendees at large gatherings, sporting events, conferences,
+                    and more.
+                  </li>
+                  <li>
+                    <span>Community Groups:</span> Provide a safer environment
+                    for your community events, fairs, and festivals.
+                  </li>
+                  <li>
+                    <span>Public Venues</span> Equip your location with an AED
+                    to increase the safety for everyone who visits.
+                  </li>
+                </ul>
+                <h3 className="page-common-h3">
+                  Our Service IncludesEnsure Safety and Preparedness at Your
+                  Event or Workplace
+                </h3>
                 <p className="page-common-desc">
-                  Day-to-day management of the organisation is led by the Chief
-                  Executive Officer and Executive Management team. General
-                  Managers head their respective areas of the organisation,
-                  supported by departmental managers and their teams.
+                  Our service includes top-quality AED units that are reliable
+                  and easy to use, meeting all necessary safety standards. We
+                  offer flexible hire periods, whether you need an AED for a
+                  day, a week, or longer, to suit your specific needs. We
+                  provide basic online training on how to use the AED and offer
+                  ongoing support throughout the hire period, with quality
+                  accredited training available on request (POA). Each AED is
+                  thoroughly checked and maintained to ensure it is in perfect
+                  working condition before being hired out.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 2xl:gap-x-[78px] 2xl:gap-y-9">
-                  <div className="about-team-card">
-                    <Image src={missionImg} alt="" />
-                    <h2 className="page-common-h3">Mary Patetsos</h2>
-                    <p className="page-common-h3 !text-[#A4A4A4] !font-bold">
-                      Chair of the Board
-                    </p>
-                  </div>
-                  <div className="about-team-card">
-                    <Image src={missionImg} alt="" />
-                    <h2 className="page-common-h3">Mary Patetsos</h2>
-                    <p className="page-common-h3 !text-[#A4A4A4] !font-bold">
-                      Chair of the Board
-                    </p>
-                  </div>
-                  <div className="about-team-card">
-                    <Image src={missionImg} alt="" />
-                    <h2 className="page-common-h3">Mary Patetsos</h2>
-                    <p className="page-common-h3 !text-[#A4A4A4] !font-bold">
-                      Chair of the Board
-                    </p>
-                  </div>
-                  <div className="about-team-card">
-                    <Image src={missionImg} alt="" />
-                    <h2 className="page-common-h3">Mary Patetsos</h2>
-                    <p className="page-common-h3 !text-[#A4A4A4] !font-bold">
-                      Chair of the Board
-                    </p>
-                  </div>
-                  <div className="about-team-card">
-                    <Image src={missionImg} alt="" />
-                    <h2 className="page-common-h3">Mary Patetsos</h2>
-                    <p className="page-common-h3 !text-[#A4A4A4] !font-bold">
-                      Chair of the Board
-                    </p>
-                  </div>
-                  <div className="about-team-card">
-                    <Image src={missionImg} alt="" />
-                    <h2 className="page-common-h3">Mary Patetsos</h2>
-                    <p className="page-common-h3 !text-[#A4A4A4] !font-bold">
-                      Chair of the Board
-                    </p>
-                  </div>
-                </div>
+                <h3 className="page-common-h3">How It Works:</h3>
+                <ol className="common-page-ul list-decimal pl-4 mb-4 md:mb-6 xl:mb-8 2xl:mb-9">
+                  <li>
+                    Contact Us: Reach out to us to discuss your AED hire needs.
+                    We'll help you determine the best solution for your
+                    situation.
+                  </li>
+                  <li>
+                    Hire Agreement: Complete our straightforward hire agreement
+                    form, detailing your hire period and contact information.
+                  </li>
+                  <li>Delivery: We deliver the AED to your location</li>
+                  <li>
+                    Use and Return: Use the AED if needed during your hire
+                    period. At the end of the hire period, return the AED to us
+                    in the condition it was received.
+                  </li>
+                </ol>
+                <h3 className="page-common-h3">Get in Touch</h3>
+                <p className="page-common-desc">
+                  Ready to enhance the safety of your workplace or event?
+                  Contact us today to learn more about our AED hire services and
+                  how we can help you be prepared for medical emergencies.
+                </p>
+                <h3 className="page-common-h3">Contact Information</h3>
+                <ul className="common-page-ul list-disc pl-4 mb-4 md:mb-6 xl:mb-8 2xl:mb-9">
+                  <li><Link href="">Phone: 1300 78 5646</Link></li>
+                  <li><Link href="">Email: supplies@stjohnsa.com.aus</Link></li>
+                </ul>
               </>
             )}
           </div>

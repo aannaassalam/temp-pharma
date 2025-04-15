@@ -67,7 +67,7 @@ body {
 }
 .primary-btn{
   @apply bg-[#038D96] py-[18px] px-[68px] text-[#FFFFFF] rounded-[8px] inline-block text-[20px]
-  font-medium text-center
+  font-medium text-center leading-[1]
 }
 .hero-banner-popup{
   box-shadow: 0px 4px 20px 4px #00000026;
@@ -319,4 +319,28 @@ body {
 .page-common-h4{
   @apply text-[#000000] text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px] 2xl:text-[28px] 
   font-semibold mb-1
+}
+
+
+
+
+
+/* Service page */
+
+.form-label{
+  @apply block text-[16px] md:text-[18px] font-medium text-[#4A4A4A]
+}
+.form-input{
+  @apply mt-1 block w-full border border-[#A4A4A4] rounded-[8px] p-2 md:p-[18px] 
+  outline-none
+}
+.common-page-ul li{
+  @apply text-[#4A4A4A] text-[14px] md:text-[16px] xl:text-[17px] 2xl:text-[18px] 
+  font-medium mb-1
+}
+.common-page-ul li span{
+  @apply font-bold 
+}
+.common-page-ul li a{
+  @apply underline underline-offset-1 
 }

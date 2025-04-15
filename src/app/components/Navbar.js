@@ -60,7 +60,7 @@ export default function Navbar() {
                 >
                   Workplace service <ChevronDown className="w-4 h-4 ml-1" />
                 </Link>
-                <div className="absolute hidden group-hover:block bg-white shadow-md   w-48 p-2 rounded-md">
+                <div className="absolute hidden group-hover:block bg-white shadow-md w-48 p-2 rounded-md">
                   <Link
                     href="/workplace"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
@@ -102,22 +102,16 @@ export default function Navbar() {
                 </Link>
                 <div className="absolute hidden group-hover:block bg-white shadow-md   w-48 p-2 rounded-md">
                   <Link
-                    href="#"
+                    href="/health"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
-                    Our Story
+                    Health and Medical Services
                   </Link>
                   <Link
-                    href="#"
+                    href="/faq"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
-                    Team
-                  </Link>
-                  <Link
-                    href="#"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                  >
-                    Careers
+                    Frequently Asked Questions
                   </Link>
                 </div>
               </div>
