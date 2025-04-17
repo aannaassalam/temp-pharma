@@ -132,22 +132,22 @@ export default function Navbar() {
                 </Link>
                 <div className="absolute hidden group-hover:block bg-white shadow-md   w-48 p-2 rounded-md">
                   <Link
-                    href="#"
+                    href="/joinus"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
-                    Our Story
+                    Join Us
                   </Link>
                   <Link
-                    href="#"
+                    href="/joinus/volunteer"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
-                    Team
+                    Become a Volunteer
                   </Link>
                   <Link
-                    href="#"
+                    href="/joinus/position-vacant"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                   >
-                    Careers
+                    Positions Vacant
                   </Link>
                 </div>
               </div>
