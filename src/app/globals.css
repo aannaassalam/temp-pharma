@@ -8,7 +8,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-montserrat), sans-serif;
 }
 
 
@@ -56,6 +56,10 @@ body {
 }
 
 /* Homepage css */
+.navLinks{
+  @apply flex items-center text-gray-700 hover:text-green-600 py-6 text-[14px] 
+  2xl:text-[16px]
+}
 .hero-banner-main{
   @apply flex gap-10
 }
