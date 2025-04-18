@@ -1,6 +1,10 @@
 @import "tailwindcss";
 
 
+:root {
+  --Colors-Primary-Alpha-10: rgba(3, 141, 150, 0.10);
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -69,6 +73,9 @@ body {
   @apply bg-[#038D96] py-[18px] px-[68px] text-[#FFFFFF] rounded-[8px] inline-block text-[20px]
   font-medium text-center leading-[1]
 }
+.secondary-btn{
+  @apply text-[20px] md:text-[22px] lg:text-[24px] text-[#038D96] underline underline-offset-2
+}
 .hero-banner-popup{
   box-shadow: 0px 4px 20px 4px #00000026;
   @apply py-10 px-6 rounded-[16px] bg-[#FFFFFF] relative before:content-[""] before:w-full before:h-[100%]
@@ -91,8 +98,9 @@ body {
 
 
 .section-heading{
+  /* backdrop-filter: blur(50px); */
   @apply flex gap-3 items-center py-[6px] px-5 rounded-[115px] mb-3 w-fit leading-[1] text-[#8AC342]
-  text-center bg-[#8AC342]
+  text-center bg-[rgba(138,195,66,0.1)]
 }
 .section-title{
   @apply text-[#000000] text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 2xl:text-[38px] 
@@ -101,7 +109,12 @@ body {
 .section-description{
   @apply text-[#777777] text-center mt-5 text-[18px] font-medium xl:px-[120px]
 }
-
+.default-card-status{
+  background: linear-gradient(0deg, var(--Colors-Primary-Alpha-10), var(--Colors-Primary-Alpha-10)),
+            linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+  @apply absolute top-[12px] right-[12px] rounded-[12px] border border-[#038D96] text-[14px] md:text-[16px] 
+  font-bold text-[#038D96] py-[6px] px-[25px] 
+}
 .default-card figure{
   @apply w-full h-[250px] rounded-tl-[12px] rounded-tr-[12px]
 }
@@ -142,7 +155,7 @@ body {
 
 
 .product-card{
-  @apply bg-[#FFFFFF] rounded-[12px]
+  @apply bg-[#FFFFFF] rounded-[12px] border border-[#E8E8E8]
 }
 .product-card-detail{
   @apply p-6 bg-[#FFFFFF] rounded-bl-[16px] rounded-br-[16px]

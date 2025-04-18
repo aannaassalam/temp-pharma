@@ -136,7 +136,7 @@ export default function Training() {
                   <span className="default-card-item">Dr. First Last</span>
                 </div>
                 <Link
-                  href="#"
+                  href="/training/course-detail"
                   className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
                 >
                   Explore this course

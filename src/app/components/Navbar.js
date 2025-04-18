@@ -155,7 +155,9 @@ export default function Navbar() {
           </div>
           {/* Icons and Get Started Button */}
           <div className="hidden xl:flex items-center space-x-4">
-            <Search className="w-5 h-5 text-gray-700 cursor-pointer" />
+            <Link href="/search">
+              <Search className="w-5 h-5 text-gray-700 cursor-pointer" />
+            </Link>
             <ShoppingCart className="w-5 h-5 text-gray-700 cursor-pointer" />
             <button className="bg-[#038D96] text-white px-4 py-2 rounded-md">
               Get Started

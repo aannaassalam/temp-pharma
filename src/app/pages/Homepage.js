@@ -218,283 +218,230 @@ export default function Homepage() {
             </span>
           </div>
 
-          <Swiper
-            modules={[Navigation, Pagination]}
-            spaceBetween={30}
-            slidesPerView={3.8}
-            className="default-card-swiper mt-8 !w-[120%]"
-          >
-            <SwiperSlide>
-              <div className="default-card">
-                <figure>
-                  <Image src={cardImage} alt="card1" />
-                </figure>
-                <div className="default-card-detail">
-                  <h3 className="default-card-title">First Aid</h3>
-                  <p className="default-card-desc">
-                    Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
-                    tempor
-                  </p>
-                  <div className="flex flex-col gap-[10px]">
-                    <span className="default-card-item">6 hours long</span>
-                    <span className="default-card-item">
-                      NIH approved certificate
-                    </span>
-                    <span className="default-card-item">
-                      4.5/5 by 5k+ Trainees
-                    </span>
-                    <span className="default-card-item">Dr. First Last</span>
+            <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={30}
+              slidesPerView={3.8}
+              className="default-card-swiper mt-8 !w-[120%]"
+            >
+              <SwiperSlide>
+                <div className="default-card relative">
+                  <span className="default-card-status">Online</span>
+                  <figure>
+                    <Image src={cardImage} alt="card1" />
+                  </figure>
+                  <div className="default-card-detail">
+                    <h3 className="default-card-title">First Aid</h3>
+                    <p className="default-card-desc">
+                      Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
+                      tempor
+                    </p>
+                    <div className="flex flex-col gap-[10px]">
+                      <span className="default-card-item">6 hours long</span>
+                      <span className="default-card-item">
+                        NIH approved certificate
+                      </span>
+                      <span className="default-card-item">
+                        4.5/5 by 5k+ Trainees
+                      </span>
+                      <span className="default-card-item">Dr. First Last</span>
+                    </div>
+                    <Link
+                      href="#"
+                      className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
+                    >
+                      Explore this course
+                    </Link>
                   </div>
-                  <Link
-                    href="#"
-                    className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
-                  >
-                    Explore this course
-                  </Link>
                 </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="default-card">
-                <figure>
-                  <Image src={cardImage} alt="card1" />
-                </figure>
-                <div className="default-card-detail">
-                  <h3 className="default-card-title">First Aid</h3>
-                  <p className="default-card-desc">
-                    Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
-                    tempor
-                  </p>
-                  <div className="flex flex-col gap-[10px]">
-                    <span className="default-card-item">6 hours long</span>
-                    <span className="default-card-item">
-                      NIH approved certificate
-                    </span>
-                    <span className="default-card-item">
-                      4.5/5 by 5k+ Trainees
-                    </span>
-                    <span className="default-card-item">Dr. First Last</span>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="default-card relative">
+                  <span className="default-card-status">Online</span>
+                  <figure>
+                    <Image src={cardImage} alt="card1" />
+                  </figure>
+                  <div className="default-card-detail">
+                    <h3 className="default-card-title">First Aid</h3>
+                    <p className="default-card-desc">
+                      Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
+                      tempor
+                    </p>
+                    <div className="flex flex-col gap-[10px]">
+                      <span className="default-card-item">6 hours long</span>
+                      <span className="default-card-item">
+                        NIH approved certificate
+                      </span>
+                      <span className="default-card-item">
+                        4.5/5 by 5k+ Trainees
+                      </span>
+                      <span className="default-card-item">Dr. First Last</span>
+                    </div>
+                    <Link
+                      href="#"
+                      className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
+                    >
+                      Explore this course
+                    </Link>
                   </div>
-                  <Link
-                    href="#"
-                    className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
-                  >
-                    Explore this course
-                  </Link>
                 </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="default-card">
-                <figure>
-                  <Image src={cardImage} alt="card1" />
-                </figure>
-                <div className="default-card-detail">
-                  <h3 className="default-card-title">First Aid</h3>
-                  <p className="default-card-desc">
-                    Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
-                    tempor
-                  </p>
-                  <div className="flex flex-col gap-[10px]">
-                    <span className="default-card-item">6 hours long</span>
-                    <span className="default-card-item">
-                      NIH approved certificate
-                    </span>
-                    <span className="default-card-item">
-                      4.5/5 by 5k+ Trainees
-                    </span>
-                    <span className="default-card-item">Dr. First Last</span>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="default-card relative">
+                  <span className="default-card-status">Online</span>
+                  <figure>
+                    <Image src={cardImage} alt="card1" />
+                  </figure>
+                  <div className="default-card-detail">
+                    <h3 className="default-card-title">First Aid</h3>
+                    <p className="default-card-desc">
+                      Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
+                      tempor
+                    </p>
+                    <div className="flex flex-col gap-[10px]">
+                      <span className="default-card-item">6 hours long</span>
+                      <span className="default-card-item">
+                        NIH approved certificate
+                      </span>
+                      <span className="default-card-item">
+                        4.5/5 by 5k+ Trainees
+                      </span>
+                      <span className="default-card-item">Dr. First Last</span>
+                    </div>
+                    <Link
+                      href="#"
+                      className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
+                    >
+                      Explore this course
+                    </Link>
                   </div>
-                  <Link
-                    href="#"
-                    className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
-                  >
-                    Explore this course
-                  </Link>
                 </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="default-card">
-                <figure>
-                  <Image src={cardImage} alt="card1" />
-                </figure>
-                <div className="default-card-detail">
-                  <h3 className="default-card-title">First Aid</h3>
-                  <p className="default-card-desc">
-                    Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
-                    tempor
-                  </p>
-                  <div className="flex flex-col gap-[10px]">
-                    <span className="default-card-item">6 hours long</span>
-                    <span className="default-card-item">
-                      NIH approved certificate
-                    </span>
-                    <span className="default-card-item">
-                      4.5/5 by 5k+ Trainees
-                    </span>
-                    <span className="default-card-item">Dr. First Last</span>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="default-card relative">
+                  <span className="default-card-status">Online</span>
+                  <figure>
+                    <Image src={cardImage} alt="card1" />
+                  </figure>
+                  <div className="default-card-detail">
+                    <h3 className="default-card-title">First Aid</h3>
+                    <p className="default-card-desc">
+                      Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
+                      tempor
+                    </p>
+                    <div className="flex flex-col gap-[10px]">
+                      <span className="default-card-item">6 hours long</span>
+                      <span className="default-card-item">
+                        NIH approved certificate
+                      </span>
+                      <span className="default-card-item">
+                        4.5/5 by 5k+ Trainees
+                      </span>
+                      <span className="default-card-item">Dr. First Last</span>
+                    </div>
+                    <Link
+                      href="#"
+                      className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
+                    >
+                      Explore this course
+                    </Link>
                   </div>
-                  <Link
-                    href="#"
-                    className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
-                  >
-                    Explore this course
-                  </Link>
                 </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="default-card">
-                <figure>
-                  <Image src={cardImage} alt="card1" />
-                </figure>
-                <div className="default-card-detail">
-                  <h3 className="default-card-title">First Aid</h3>
-                  <p className="default-card-desc">
-                    Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
-                    tempor
-                  </p>
-                  <div className="flex flex-col gap-[10px]">
-                    <span className="default-card-item">6 hours long</span>
-                    <span className="default-card-item">
-                      NIH approved certificate
-                    </span>
-                    <span className="default-card-item">
-                      4.5/5 by 5k+ Trainees
-                    </span>
-                    <span className="default-card-item">Dr. First Last</span>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="default-card relative">
+                  <span className="default-card-status">Online</span>
+                  <figure>
+                    <Image src={cardImage} alt="card1" />
+                  </figure>
+                  <div className="default-card-detail">
+                    <h3 className="default-card-title">First Aid</h3>
+                    <p className="default-card-desc">
+                      Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
+                      tempor
+                    </p>
+                    <div className="flex flex-col gap-[10px]">
+                      <span className="default-card-item">6 hours long</span>
+                      <span className="default-card-item">
+                        NIH approved certificate
+                      </span>
+                      <span className="default-card-item">
+                        4.5/5 by 5k+ Trainees
+                      </span>
+                      <span className="default-card-item">Dr. First Last</span>
+                    </div>
+                    <Link
+                      href="#"
+                      className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
+                    >
+                      Explore this course
+                    </Link>
                   </div>
-                  <Link
-                    href="#"
-                    className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
-                  >
-                    Explore this course
-                  </Link>
                 </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="default-card">
-                <figure>
-                  <Image src={cardImage} alt="card1" />
-                </figure>
-                <div className="default-card-detail">
-                  <h3 className="default-card-title">First Aid</h3>
-                  <p className="default-card-desc">
-                    Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
-                    tempor
-                  </p>
-                  <div className="flex flex-col gap-[10px]">
-                    <span className="default-card-item">6 hours long</span>
-                    <span className="default-card-item">
-                      NIH approved certificate
-                    </span>
-                    <span className="default-card-item">
-                      4.5/5 by 5k+ Trainees
-                    </span>
-                    <span className="default-card-item">Dr. First Last</span>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="default-card relative">
+                  <span className="default-card-status">Online</span>
+                  <figure>
+                    <Image src={cardImage} alt="card1" />
+                  </figure>
+                  <div className="default-card-detail">
+                    <h3 className="default-card-title">First Aid</h3>
+                    <p className="default-card-desc">
+                      Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
+                      tempor
+                    </p>
+                    <div className="flex flex-col gap-[10px]">
+                      <span className="default-card-item">6 hours long</span>
+                      <span className="default-card-item">
+                        NIH approved certificate
+                      </span>
+                      <span className="default-card-item">
+                        4.5/5 by 5k+ Trainees
+                      </span>
+                      <span className="default-card-item">Dr. First Last</span>
+                    </div>
+                    <Link
+                      href="#"
+                      className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
+                    >
+                      Explore this course
+                    </Link>
                   </div>
-                  <Link
-                    href="#"
-                    className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
-                  >
-                    Explore this course
-                  </Link>
                 </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="default-card">
-                <figure>
-                  <Image src={cardImage} alt="card1" />
-                </figure>
-                <div className="default-card-detail">
-                  <h3 className="default-card-title">First Aid</h3>
-                  <p className="default-card-desc">
-                    Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
-                    tempor
-                  </p>
-                  <div className="flex flex-col gap-[10px]">
-                    <span className="default-card-item">6 hours long</span>
-                    <span className="default-card-item">
-                      NIH approved certificate
-                    </span>
-                    <span className="default-card-item">
-                      4.5/5 by 5k+ Trainees
-                    </span>
-                    <span className="default-card-item">Dr. First Last</span>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="default-card relative">
+                  <span className="default-card-status">Online</span>
+                  <figure>
+                    <Image src={cardImage} alt="card1" />
+                  </figure>
+                  <div className="default-card-detail">
+                    <h3 className="default-card-title">First Aid</h3>
+                    <p className="default-card-desc">
+                      Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
+                      tempor
+                    </p>
+                    <div className="flex flex-col gap-[10px]">
+                      <span className="default-card-item">6 hours long</span>
+                      <span className="default-card-item">
+                        NIH approved certificate
+                      </span>
+                      <span className="default-card-item">
+                        4.5/5 by 5k+ Trainees
+                      </span>
+                      <span className="default-card-item">Dr. First Last</span>
+                    </div>
+                    <Link
+                      href="#"
+                      className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
+                    >
+                      Explore this course
+                    </Link>
                   </div>
-                  <Link
-                    href="#"
-                    className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
-                  >
-                    Explore this course
-                  </Link>
                 </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="default-card">
-                <figure>
-                  <Image src={cardImage} alt="card1" />
-                </figure>
-                <div className="default-card-detail">
-                  <h3 className="default-card-title">First Aid</h3>
-                  <p className="default-card-desc">
-                    Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
-                    tempor
-                  </p>
-                  <div className="flex flex-col gap-[10px]">
-                    <span className="default-card-item">6 hours long</span>
-                    <span className="default-card-item">
-                      NIH approved certificate
-                    </span>
-                    <span className="default-card-item">
-                      4.5/5 by 5k+ Trainees
-                    </span>
-                    <span className="default-card-item">Dr. First Last</span>
-                  </div>
-                  <Link
-                    href="#"
-                    className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
-                  >
-                    Explore this course
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="default-card">
-                <figure>
-                  <Image src={cardImage} alt="card1" />
-                </figure>
-                <div className="default-card-detail">
-                  <h3 className="default-card-title">First Aid</h3>
-                  <p className="default-card-desc">
-                    Lorem ipsum dolor sit amet, consectetur elit, sed doeiusmod
-                    tempor
-                  </p>
-                  <div className="flex flex-col gap-[10px]">
-                    <span className="default-card-item">6 hours long</span>
-                    <span className="default-card-item">
-                      NIH approved certificate
-                    </span>
-                    <span className="default-card-item">
-                      4.5/5 by 5k+ Trainees
-                    </span>
-                    <span className="default-card-item">Dr. First Last</span>
-                  </div>
-                  <Link
-                    href="#"
-                    className="primary-btn !py-[10px] !text-[18px] !w-full mt-4"
-                  >
-                    Explore this course
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
+              </SwiperSlide>
+            </Swiper>
           <div className="flex justify-center mt-10">
             <a className="secondary-button" href="">
               View all courses
