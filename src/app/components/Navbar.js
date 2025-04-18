@@ -32,7 +32,7 @@ export default function Navbar() {
               <div className="relative group">
                 <Link
                   href="/about"
-                  className="flex items-center text-gray-700 hover:text-green-600 py-6"
+                  className="navLinks"
                 >
                   About Us
                 </Link>
@@ -40,7 +40,7 @@ export default function Navbar() {
               <div className="relative group">
                 <Link
                   href="/training"
-                  className="flex items-center text-gray-700 hover:text-green-600 py-6"
+                  className="navLinks"
                 >
                   Training
                 </Link>
@@ -48,7 +48,7 @@ export default function Navbar() {
               <div className="relative group">
                 <Link
                   href="#"
-                  className="flex items-center text-gray-700 hover:text-green-600 py-6"
+                  className="navLinks"
                 >
                   Shop
                 </Link>
@@ -56,7 +56,7 @@ export default function Navbar() {
               <div className="relative group">
                 <Link
                   href="#"
-                  className="flex items-center text-gray-700 hover:text-green-600 py-6"
+                  className="navLinks"
                 >
                   Workplace service <ChevronDown className="w-4 h-4 ml-1" />
                 </Link>
@@ -96,7 +96,7 @@ export default function Navbar() {
               <div className="relative group">
                 <Link
                   href="#"
-                  className="flex items-center text-gray-700 hover:text-green-600 py-6"
+                  className="navLinks"
                 >
                   Health service <ChevronDown className="w-4 h-4 ml-1" />
                 </Link>
@@ -118,7 +118,7 @@ export default function Navbar() {
               <div className="relative group">
                 <Link
                   href="#"
-                  className="flex items-center text-gray-700 hover:text-green-600 py-6"
+                  className="navLinks"
                 >
                   How we help
                 </Link>
@@ -126,7 +126,7 @@ export default function Navbar() {
               <div className="relative group">
                 <Link
                   href="#"
-                  className="flex items-center text-gray-700 hover:text-green-600 py-6"
+                  className="navLinks"
                 >
                   Join us <ChevronDown className="w-4 h-4 ml-1" />
                 </Link>
